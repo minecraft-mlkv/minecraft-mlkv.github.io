@@ -1,0 +1,644 @@
+<!doctype html>
+<!--[if IE 9]> <html class="no-js ie9 fixed-layout" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js " lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Site Meta -->
+    <title>Minecraft-MLKV</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet"> 
+    
+    <!-- Custom & Default Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="style.css">
+          <style>
+       @font-face {
+        font-family: Minecap; /* Имя шрифта */
+        src: url(fonts/MinecraftEvenings-RBao.ttf); /* Путь к файлу со шрифтом */
+       }
+      </style>
+
+    <!--[if lt IE 9]>
+        <script src="js/vendor/html5shiv.min.js"></script>
+        <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>  
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <img class="preloader" src="images/loader.gif" alt="">
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+
+    <div id="wrapper">
+        <!-- BEGIN # MODAL LOGIN -->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Begin # DIV Form -->
+                    <div id="div-forms">
+                        <form id="login-form">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="flaticon-add" aria-hidden="true"></span>
+                            </button>
+                            <div class="modal-body">
+                                <input class="form-control" type="text" placeholder="What you are looking for?" required>
+                            </div>
+                        </form><!-- End # Login Form -->
+                    </div><!-- End # DIV Form -->
+                </div>
+            </div>
+        </div>
+        <!-- END # MODAL LOGIN -->
+
+        <header class="header header-normal">
+            <div class="topbar clearfix">
+                <div class="container">
+                    <div class="row-fluid">
+                        <div class="col-md-6 col-sm-6 text-left">
+                            <p>
+                                <strong><i class="fa fa-server"></i></strong> IP адрес: 135.181.172.21: 12117 &nbsp;&nbsp;
+                            </p>
+                        </div><!-- end left -->
+                        <div class="col-md-6 col-sm-6 hidden-xs text-right">
+                            <!--<div class="social">
+                                <a class="facebook" href="#" data-tooltip="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>              
+                                <a class="twitter" href="#" data-tooltip="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+                                <a class="google" href="#" data-tooltip="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+                                <a class="linkedin" href="#" data-tooltip="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                <a class="pinterest" href="#" data-tooltip="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                            </div> --><!-- end social -->
+                        </div><!-- end left -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end topbar -->
+
+            <div class="container">
+                <nav class="navbar navbar-default yamm">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="logo-normal">
+                             <a class="navbar-brand" href="index.html">
+                            <span style="display: block; margin-top: 17px; color: black; font-family: Minecap; font-size: 2em;">Minecraft MLKV</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html"><span style="text-transform: uppercase;">главная</span></a></li>
+                            <li><a href="https://minecraft-mlkv.clan.su/forum/"><span style="text-transform: uppercase;">форум</span></a></li>
+                            <li><a href="downloads.html"><span style="text-transform: uppercase;">скачать</span></a></li>
+                            <li class="active"><a href="screens.html"><span style="text-transform: uppercase; color: white;">скриншоты</span></a></li>
+                            <li><a href="skins.html"><span style="text-transform: uppercase;">скины</span></a></li>
+                            <li><a href="map.html"><span style="text-transform: uppercase;">карта</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             <!--
+                            <li class="iconitem"><a href="#" data-toggle="modal" data-target="#login-modal"><i class="fa fa-search"></i></a></li>
+                            <li class="iconitem"><a class="shopicon" href="shop-cart.html"><i class="fa fa-shopping-basket"></i> &nbsp;(0)</a></li>-->
+                        </ul>
+                    </div>
+                </nav><!-- end navbar -->
+            </div><!-- end container -->
+        </header>
+
+        <section class="section lb p120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="tagline-message page-title text-center">
+                            <h3>скриншоты наших игроков</h3>
+                            <ul class="breadcrumb">
+                                <li><a href="javascript:void(0)">фотографии</a></li>
+                                <li class="active">воспоминания</li>
+                            </ul>
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end section -->
+
+        <section class="section gb nopadtop">
+            <div class="container">
+                <div class="boxed boxedp4">
+                    <div class="shop-top">
+                        <div class="clearfix">
+                            <div class="pull-left">
+                                <p> скриншоты 13–24 из 24 результатов</p>
+                            </div>
+                            <div class="pull-right">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row blog-grid shop-grid">
+                        <div class="col-md-3">
+                            <div class="course-box shop-wrapper">
+                                <div class="image-wrap entry">
+                                    <img src="scr/13.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a rel="prettyPhoto[inline]" href="scr/13.jpg" title=""><i class="flaticon-add"></i></a>
+                                    </div>
+                                </div>
+                                <!-- end image-wrap -->
+                                <div class="course-details shop-box text-center">
+                                    <h4>
+                                        <a href="#" title="">Церковь</a>
+                                        <small>заброшенная церковь</small>
+                                    </h4>
+                                </div>
+                                <!-- end details -->
+                                <div class="course-footer clearfix">
+                                    <div class="pull-left">
+                                        <ul class="list-inline">
+                                            <li><a href="#"><i class="fa fa-shopping-basket"></i> Add Cart</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+
+                                    <div class="pull-right">
+                                        <ul class="list-inline">
+                                            <li><a href="#">$441.00</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+                                </div><!-- end footer -->
+                            </div><!-- end box -->
+                        </div><!-- end col -->
+
+                        <div class="col-md-3">
+                            <div class="course-box shop-wrapper">
+                                <div class="image-wrap entry">
+                                    <img src="scr/14.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a rel="prettyPhoto[inline]" href="scr/14.jpg" title=""><i class="flaticon-add"></i></a>
+                                    </div>
+                                </div>
+                                <!-- end image-wrap -->
+                                <div class="course-details shop-box text-center">
+                                    <h4>
+                                        <a href="#" title="">Поле</a>
+                                        <small>крипер в поле</small>
+                                    </h4>
+                                </div>
+                                <!-- end details -->
+                                <div class="course-footer clearfix">
+                                    <div class="pull-left">
+                                        <ul class="list-inline">
+                                            <li><a href="#"><i class="fa fa-shopping-basket"></i> Add Cart</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+
+                                    <div class="pull-right">
+                                        <ul class="list-inline">
+                                            <li><a href="#">$122.00</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+                                </div><!-- end footer -->
+                            </div><!-- end box -->
+                        </div><!-- end col -->
+
+                        <div class="col-md-3">
+                            <div class="course-box shop-wrapper">
+                                <div class="image-wrap entry">
+                                    <img src="scr/15.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a rel="prettyPhoto[inline]" href="scr/15.jpg" title=""><i class="flaticon-add"></i></a>
+                                    </div>
+                                </div>
+                                <!-- end image-wrap -->
+                                <div class="course-details shop-box text-center">
+                                    <h4>
+                                        <a href="#" title="">Гавань</a>
+                                        <small>так гавань выглядит утром</small>
+                                    </h4>
+                                </div>
+                                <!-- end details -->
+                                <div class="course-footer clearfix">
+                                    <div class="pull-left">
+                                        <ul class="list-inline">
+                                            <li><a href="#"><i class="fa fa-shopping-basket"></i> Add Cart</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+
+                                    <div class="pull-right">
+                                        <ul class="list-inline">
+                                            <li><a href="#">$52.00</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+                                </div><!-- end footer -->
+                            </div><!-- end box -->
+                        </div><!-- end col -->
+
+                        <div class="col-md-3">
+                            <div class="course-box shop-wrapper">
+                                <div class="image-wrap entry">
+                                    <img src="scr/16.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a rel="prettyPhoto[inline]" href="scr/16.jpg" title=""><i class="flaticon-add"></i></a>
+                                    </div>
+                                </div>
+                                <!-- end image-wrap -->
+                                <div class="course-details shop-box text-center">
+                                    <h4>
+                                        <a href="#" title="">Андрей</a>
+                                        <small>так выглядит мой персонаж</small>
+                                    </h4>
+                                </div>
+                                <!-- end details -->
+                                <div class="course-footer clearfix">
+                                    <div class="pull-left">
+                                        <ul class="list-inline">
+                                            <li><a href="#"><i class="fa fa-shopping-basket"></i> Add Cart</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+
+                                    <div class="pull-right">
+                                        <ul class="list-inline">
+                                            <li><a href="#">$22.00</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+                                </div><!-- end footer -->
+                            </div><!-- end box -->
+                        </div><!-- end col -->
+
+                        <div class="col-md-3">
+                            <div class="course-box shop-wrapper">
+                                <div class="image-wrap entry">
+                                    <img src="scr/17.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a rel="prettyPhoto[inline]" href="scr/17.jpg" title=""><i class="flaticon-add"></i></a>
+                                    </div>
+                                </div>
+                                <!-- end image-wrap -->
+                                <div class="course-details shop-box text-center">
+                                    <h4>
+                                        <a href="#" title="">Гриб</a>
+                                        <small>гигантский гриб ночью</small>
+                                    </h4>
+                                </div>
+                                <!-- end details -->
+                                <div class="course-footer clearfix">
+                                    <div class="pull-left">
+                                        <ul class="list-inline">
+                                            <li><a href="#"><i class="fa fa-shopping-basket"></i> Add Cart</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+
+                                    <div class="pull-right">
+                                        <ul class="list-inline">
+                                            <li><a href="#">$66.00</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+                                </div><!-- end footer -->
+                            </div><!-- end box -->
+                        </div><!-- end col -->
+
+                        <div class="col-md-3">
+                            <div class="course-box shop-wrapper">
+                                <div class="image-wrap entry">
+                                    <img src="scr/18.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a rel="prettyPhoto[inline]" href="scr/18.jpg" title=""><i class="flaticon-add"></i></a>
+                                    </div>
+                                </div>
+                                <!-- end image-wrap -->
+                                <div class="course-details shop-box text-center">
+                                    <h4>
+                                        <a href="#" title="">Город</a>
+                                        <small>главная башня города</small>
+                                    </h4>
+                                </div>
+                                <!-- end details -->
+                                <div class="course-footer clearfix">
+                                    <div class="pull-left">
+                                        <ul class="list-inline">
+                                            <li><a href="#"><i class="fa fa-shopping-basket"></i> Add Cart</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+
+                                    <div class="pull-right">
+                                        <ul class="list-inline">
+                                            <li><a href="#">$578.00</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+                                </div><!-- end footer -->
+                            </div><!-- end box -->
+                        </div><!-- end col -->
+
+                        <div class="col-md-3">
+                            <div class="course-box shop-wrapper">
+                                <div class="image-wrap entry">
+                                    <img src="scr/19.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a rel="prettyPhoto[inline]" href="scr/19.jpg" title=""><i class="flaticon-add"></i></a>
+                                    </div>
+                                </div>
+                                <!-- end image-wrap -->
+                                <div class="course-details shop-box text-center">
+                                    <h4>
+                                        <a href="#" title="">Лес</a>
+                                        <small>прогулка по ночному лесу</small>
+                                    </h4>
+                                </div>
+                                <!-- end details -->
+                                <div class="course-footer clearfix">
+                                    <div class="pull-left">
+                                        <ul class="list-inline">
+                                            <li><a href="#"><i class="fa fa-shopping-basket"></i> Add Cart</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+
+                                    <div class="pull-right">
+                                        <ul class="list-inline">
+                                            <li><a href="#">$90.00</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+                                </div><!-- end footer -->
+                            </div><!-- end box -->
+                        </div><!-- end col -->
+
+                        <div class="col-md-3">
+                            <div class="course-box shop-wrapper">
+                                <div class="image-wrap entry">
+                                    <img src="scr/20.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a rel="prettyPhoto[inline]" href="scr/20.jpg" title=""><i class="flaticon-add"></i></a>
+                                    </div>
+                                </div>
+                                <!-- end image-wrap -->
+                                <div class="course-details shop-box text-center">
+                                    <h4>
+                                        <a href="#" title="">Центр</a>
+                                        <small>центр города ночью</small>
+                                    </h4>
+                                </div>
+                                <!-- end details -->
+                                <div class="course-footer clearfix">
+                                    <div class="pull-left">
+                                        <ul class="list-inline">
+                                            <li><a href="#"><i class="fa fa-shopping-basket"></i> Add Cart</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+
+                                    <div class="pull-right">
+                                        <ul class="list-inline">
+                                            <li><a href="#">$22.00</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+                                </div><!-- end footer -->
+                            </div><!-- end box -->
+                        </div><!-- end col -->
+
+                        <div class="col-md-3">
+                            <div class="course-box shop-wrapper">
+                                <div class="image-wrap entry">
+                                    <img src="scr/21.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a rel="prettyPhoto[inline]" href="scr/21.jpg" title=""><i class="flaticon-add"></i></a>
+                                    </div>
+                                </div>
+                                <!-- end image-wrap -->
+                                <div class="course-details shop-box text-center">
+                                    <h4>
+                                        <a href="#" title="">Площадь</a>
+                                        <small>вечер на площади города</small>
+                                    </h4>
+                                </div>
+                                <!-- end details -->
+                                <div class="course-footer clearfix">
+                                    <div class="pull-left">
+                                        <ul class="list-inline">
+                                            <li><a href="#"><i class="fa fa-shopping-basket"></i> Add Cart</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+
+                                    <div class="pull-right">
+                                        <ul class="list-inline">
+                                            <li><a href="#">$412.00</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+                                </div><!-- end footer -->
+                            </div><!-- end box -->
+                        </div><!-- end col -->
+
+                        <div class="col-md-3">
+                            <div class="course-box shop-wrapper">
+                                <div class="image-wrap entry">
+                                    <img src="scr/22.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a rel="prettyPhoto[inline]" href="scr/22.jpg" title=""><i class="flaticon-add"></i></a>
+                                    </div>
+                                </div>
+                                <!-- end image-wrap -->
+                                <div class="course-details shop-box text-center">
+                                    <h4>
+                                        <a href="#" title="">Уля</a>
+                                        <small>уля гуляет в лесу</small>
+                                    </h4>
+                                </div>
+                                <!-- end details -->
+                                <div class="course-footer clearfix">
+                                    <div class="pull-left">
+                                        <ul class="list-inline">
+                                            <li><a href="#"><i class="fa fa-shopping-basket"></i> Add Cart</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+
+                                    <div class="pull-right">
+                                        <ul class="list-inline">
+                                            <li><a href="#">$331.00</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+                                </div><!-- end footer -->
+                            </div><!-- end box -->
+                        </div><!-- end col -->
+
+                        <div class="col-md-3">
+                            <div class="course-box shop-wrapper">
+                                <div class="image-wrap entry">
+                                    <img src="scr/23.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a rel="prettyPhoto[inline]" href="scr/23.jpg" title=""><i class="flaticon-add"></i></a>
+                                    </div>
+                                </div>
+                                <!-- end image-wrap -->
+                                <div class="course-details shop-box text-center">
+                                    <h4>
+                                        <a href="#" title="">Грибы</a>
+                                        <small>грибной лес ночью</small>
+                                    </h4>
+                                </div>
+                                <!-- end details -->
+                                <div class="course-footer clearfix">
+                                    <div class="pull-left">
+                                        <ul class="list-inline">
+                                            <li><a href="#"><i class="fa fa-shopping-basket"></i> Add Cart</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+
+                                    <div class="pull-right">
+                                        <ul class="list-inline">
+                                            <li><a href="#">$44.00</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+                                </div><!-- end footer -->
+                            </div><!-- end box -->
+                        </div><!-- end col -->
+
+                        <div class="col-md-3">
+                            <div class="course-box shop-wrapper">
+                                <div class="image-wrap entry">
+                                    <img src="scr/24.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a rel="prettyPhoto[inline]" href="scr/24.jpg" title=""><i class="flaticon-add"></i></a>
+                                    </div>
+                                </div>
+                                <!-- end image-wrap -->
+                                <div class="course-details shop-box text-center">
+                                    <h4>
+                                        <a href="#" title="">Уля</a>
+                                        <small>уля смотрит на кратер</small>
+                                    </h4>
+                                </div>
+                                <!-- end details -->
+                                <div class="course-footer clearfix">
+                                    <div class="pull-left">
+                                        <ul class="list-inline">
+                                            <li><a href="#"><i class="fa fa-shopping-basket"></i> Add Cart</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+
+                                    <div class="pull-right">
+                                        <ul class="list-inline">
+                                            <li><a href="#">$441.00</a></li>
+                                        </ul>
+                                    </div><!-- end left -->
+                                </div><!-- end footer -->
+                            </div><!-- end box -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="invis">
+
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <ul class="pagination">
+                                <li class=""><a href="screens.html">&laquo;</a></li>
+                                <li ><a href="screens.html">1</a></li>
+                                <li class="active"><a href="javascript:void(0)">2</a></li>
+                                <li class="disabled"><a href="javascript:void(0)">&raquo;</a></li>
+                            </ul>
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+                </div>
+            </div><!-- end container -->
+        </section>
+
+<footer class="section footer noover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="widget clearfix">
+                            
+                            <div class="newsletter-widget">
+
+
+                                <img src="images/payments.png" alt="" class="img-responsive">
+                            </div><!-- end newsletter -->
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-3 col-md-3">
+                        <div class="widget clearfix">
+                            <h3 class="widget-title">Заходите на Наш Форум</h3>
+                            <p>Вы можете присоединится к Нам посетив наш форум!</p>
+                            <a href="https://minecraft-mlkv.clan.su/forum/" class="readmore">Зайти на Форум</a>
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-2 col-md-2">
+                        <div class="widget clearfix">
+
+  
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-3 col-md-3">
+                        <div class="widget clearfix">
+                            <h3 class="widget-title">Популярные Тэги</h3>
+                            <div class="tags-widget">   
+                                <ul class="list-inline">
+                                    <li><a>сервер</a></li>
+                                    <li><a>майнкрафт</a></li>
+                                    <li><a>скины</a></li>
+                                    <li><a>карты</a></li>
+                                    <li><a>minecraft 1.16.0</a></li>
+                                    <li><a>скриншоты</a></li>
+                                    <li><a>материалы</a></li>
+                                    <li><a>обои</a></li>
+                                    <li><a>обсуждение</a></li>
+                                </ul>
+                            </div><!-- end list-widget -->
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </footer><!-- end footer -->
+
+        <div class="copyrights">
+            <div class="container">
+                <div class="clearfix">
+                    <div class="pull-left">
+                        <div class="cop-logo">
+                           
+                        </div>
+                    </div>
+
+                    <div class="pull-right">
+                        <div class="footer-links">
+                            <ul class="list-inline">
+                                <li>Дизайн : <a href="https://vk.com/id556372234">Андрей Строн</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </div><!-- end copy -->
+    </div><!-- end wrapper -->
+
+    <!-- jQuery Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
